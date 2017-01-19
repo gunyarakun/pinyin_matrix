@@ -2,8 +2,27 @@ consonants = %i(b p m f d t n l g k h j q x zh ch sh r z c s)
 consonants.unshift(:'')
 vowels = %i(a o e -i er ai ei ao ou an en ang eng ong i ia ie iao iou ian in iang ing iong u ua uo uai uei uan uen uang ueng ü üe üan ün)
 kanjis = {
+  # nil: no existence
+  # '' : no common kanji
   a: ['啊', nil, nil, nil],
   ba: ['八', '拔', '把', '爸'],
+  pa: ['', '爬', nil, '怕'],
+  ma: ['妈', '麻', '马', '骂'],
+  fa: ['发', '罚', '法', ''],
+  da: ['', '达', '打', '大'],
+  ta: ['他', nil, '塔', '踏'],
+  na: ['', '拿', '哪', '那'],
+  la: ['拉', '', '', '辣'],
+  ga: ['', '', '', ''],
+  ka: ['咖', nil, '卡', nil],
+  ha: ['哈', '', '', nil],
+  zha: ['扎', '闸', '眨', '炸'],
+  cha: ['插', '茶', '', '差'],
+  sha: ['沙', '', '', ''],
+  za: ['', '杂', '', nil],
+  ca: ['擦', nil, '', nil],
+  sa: ['', nil, '洒', ''],
+# : ['', '', '', ''],
 }
 
 def pinyin(consonant, vowel)
